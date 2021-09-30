@@ -1,0 +1,92 @@
+                    body,
+                    html {
+                        margin: 0;
+                        padding: 0;
+                        font-family: 'Fjalla One', sans-serif;
+                    }
+                    
+                    .wrapper {
+                        height: 100vh;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        perspective: 2px;
+                    }
+                    
+                    .section {
+                        position: relative;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        flex-direction: column;
+                        padding: 30px;
+                        justify-content: center;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 25px;
+                    }
+                    
+                    h1 {
+                        padding: 20px;
+                        border: 1px solid white;
+                    }
+                    
+                    p {
+                        font-size: 30px;
+                    }
+                    
+                    .parallax::after {
+                        content: " ";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        transform: translateZ(-1px) scale(1.5);
+                        background-size: 100%;
+                        z-index: -1;
+                    }
+                    
+                    .static {
+                        background: black;
+                    }
+                    
+                    .bg1::after {
+                        background-image: url('./image/img1.jpg');
+                    }
+                    
+                    .bg2::after {
+                        background-image: url('./image/img3.jpg');
+                    }
+                    
+                    .bg3::after {
+                        background-image: url('./image/img4.jpg');
+                    }
+                    
+                    .bg4::after {
+                        background-image: url('./image/img5.jpg');
+                    }
+                    
+                    .bg5::after {
+                        background-image: url('./image/img6.jpg');
+                    }
+                    
+                    .bg6::after {
+                        background-image: url('image/img7.jpg');
+                    }
+                    
+                    .bg7::after {
+                        background-image: url('image/img8.jpg');
+                    }
+                    
+                    .bg8::after {
+                        background-image: url('image/img9.jpg');
+                    }
+                    
+                    .bg9::after {
+                        background-image: url('image/img10.jpg');
+                    }
+                    
+                    .bg10::after {
+                        background-image: url('image/img11.jpg');
+                    }
